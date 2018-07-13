@@ -31,7 +31,13 @@
 	
 	Trong mô hình thứ hai, giá trị ratings dự đoán được là không quan trọng. Mô hình thứ nhất phổ biến hơn trong thực tế, bởi vì mô hình thứ hai có thể được giải quyết thông qua việc xử lý mô hình thứ nhất. Tuy nhiên, trong nhiều trường hợp, sẽ là dễ dàng hơn và tự nhiên hơn nếu thiết kế và xây dựng mô hình thứ hai một cách trực tiếp.
 	
-	Trong kinh doanh, việc tăng doanh số bán hàng hay tăng lợi nhuận là nhiệm vụ quan trọng nhất của hệ thống gợi ý. Bằng cách sử dụng các thuật toán, hệ thống gợi ý mang những items thích hợp đến sự chú ý của users, điều này làm tăng doanh thu và lợi nhuận cho người kinh doanh.
+	Trong kinh doanh, việc tăng doanh số bán hàng hay tăng lợi nhuận là nhiệm vụ quan trọng nhất của hệ thống gợi ý. Bằng cách sử dụng các thuật toán, hệ thống gợi ý mang những items thích hợp đến sự chú ý của users, điều này làm tăng doanh thu và lợi nhuận cho người kinh doanh. Để thực hiện được nhiệm vụ này, hệ thống gợi ý phải có một số mục tiêu hoạt động và tiêu chí kỹ thuật như sau:
+	
+	\begin{itemize}
+		\item Relevance (Tính phù hợp): Một mục tiêu hoạt động hiển nhiên nhất của hệ thống gợi ý là gợi ý items thích hợp với users, do users thường mua những sản phẩm mà họ cảm thấy thú vị và phù hợp. Mặc dù sự thích hợp là mục tiêu chính của hệ thống gợi ý, nhưng nếu chỉ có mỗi mục tiêu này thì vẫn là chưa đủ, vì vậy chúng ta sẽ nói đến một số mục tiêu "hạng 2" sau đây, mặc dù nó không quan trọng bằng Tính phù hợp, nhưng nó vẫn mang một ý nghĩa quan trọng và ảnh hưởng khá nhiều đến một hệ thống gợi ý được xem là tốt.
+		\item Novelty (Tính mới lạ): Hệ thống gợi ý thực sự có hiệu quả khi nó gợi ý những items mà users chưa từng thấy trong quá khứ. Ví dụ, một bộ phim phổ biến với một thể loại quen thuộc sẽ hiếm khi gây ấn tượng cho user. Việc lặp đi lặp lại gợi ý những items phổ biến cũng có thể dẫn tới sự giảm sút trong sự đa dạng trong việc "bán" items.
+	\end{itemize}
+	
 	\section{Phân loại một số hệ thống gợi ý phổ biến}
 	
 		\subsection{Collaborative Filtering Models}
