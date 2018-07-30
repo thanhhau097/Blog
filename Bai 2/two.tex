@@ -17,9 +17,17 @@
 
 \begin{document}
 	\section{Phân loại một số hệ thống gợi ý phổ biến}
-	
-		\subsection{Collaborative Filtering Models (Mô hình lọc cộng tác)}
+		Với các mô hình cơ bản của hệ thống gợi ý, thông thường chúng ta làm việc với hai kiểu dữ liệu:
+		\begin{itemize}
+			\item User-item interactions (tương tác giữa users và items): ví dụ như việc ratings hoặc hành vi mua hàng của user.
+			\item Attribute information: Thông tin về các thuộc tính của user hoặc item ví dụ như: sở thích, thói quen, đặc điểm của user hay thể loại, tính chất của item.
+		\end{itemize}
 		
+		Phương pháp sử dụng thông tin về sự tương tác giữa user và item được gọi là phương pháp \textit{lọc cộng tác}, \textit{(collaborative filtering)}, còn phương pháp sử dụng các thông tin về thuộc tính của user và item được gọi là \textit{content-based recommender}. Có một lưu ý rằng, phương pháp \textit{content-based recommender} thông thường vẫn sử dụng thêm cả thông tin về bảng ratings của user lên items, mô hình/ phương pháp này thường chỉ tập trung vào ratings của một user riêng lẻ hơn là tất cả các users. Ngoài ra, trong hệ thống gợi ý dựa trên sự hiểu biết \textit{(knowledge-based recommender systems)}, các gợi ý được đưa ra dựa trên những yêu cầu của user \textit{(user requirements)}. Thay vì sử dụng lịch sử đánh giá hoặc lịch sử mua hàng của người dùng, những cơ sở thông tin bên ngoài được sử dụng để đưa ra gợi ý. Một số hệ thống được xây dựng bằng cách kết hợp các phương pháp khác nhau được gọi là hệ thống hỗn hợp \textit{hybrid systems}. \textit{Hybrid systems} có thể kết hợp được những ưu điểm của nhiều phương pháp/hệ thống khác nhau để tạo nên một kỹ thuật mạnh mẽ hơn. Dưới đây là một số hệ thống gợi ý cơ bản: 
+		
+		
+		\subsection{Collaborative Filtering Models (Mô hình lọc cộng tác)}
+			\textit{Collaborative Filtering} sử dụng dữ liệu \textit{ratings} của user lên item để đưa ra gợi ý. Một vấn đề khó khăn hay thách thức khi sử dụng \textit{Collaborative Filtering} là việc ma trận ratings bị \textit{sparse} - nghĩa là số lượng item được rate của mỗi user là rất ít so với tổng số lượng item trong hệ thống. Ví dụ như với một ứng dụng xem phim trong đó user có thể đánh giá chất lượng của bộ phim đó qua việc rating, chúng ta dễ dàng nhận thấy rằng 
 		\subsection{Content-Based Recommender Systems}
 		
 		\subsection{Knowledge-Based Recommender Systems}
